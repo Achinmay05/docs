@@ -1,71 +1,66 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: 'PGAGI Assignment'
+description: ' "Comprehensive Analytics Dashboard" that displays data fetched from multiple APIs, incorporates interactive and complex animations, and offers a seamless, high-performance user experience built using Next.js, React, TypeScript, SCSS/CSS, and Tailwind CSS.'
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+<a href="https://drive.google.com/file/d/14N4_m8v3Gf3i6zvutqLB6OksVAd2_PVy/view?usp=sharing" target="_blank">
+  <img 
+    src="/images/SignupPage.png" 
+    alt="Video thumbnail" 
+    className="rounded-lg hover:opacity-80 transition-opacity"
+  />
+  <div className="mt-2 text-center">Click to play video</div>
+</a>
 
-## Setting up
 
-The first step to world-class documentation is setting up your editing environments.
+## Core Directories
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+- `src/` — Source directory containing all application code
+  - `assets/` — Static assets like images, fonts, and icons.
+  - `components/` — Reusable React components
+    - `github/` — GitHub integration components
+    - `login/` — Authentication and user management components
+    - `news/` — News display components
+    - `stock/` — Stock market components
+    - `tabs/` — Tab navigation components
+    - `weather/` — Weather display components
+  - `redux/` — Redux state management
+    - `feature/login` — Login-related Redux slices and actions
+    - `store.js` — Redux store configuration
+  - `utils/` — Utility functions and helper methods
+  - `App.css` — Global CSS styles
+  - `App.jsx` — Root React component
+  - `index.css` — Entry CSS file
+  - `main.jsx` — Application entry point
 
-## Make it yours
+## Directory Details
 
-Update your docs to your brand and add valuable content for the best user conversion.
+### `components/`
+Individual UI components that are used throughout the application. Each component is organized by feature:
+- `github/` — Repository search and details display
+- `login/` — Authentication forms and user management
+- `news/` — News articles and category navigation
+- `stock/` — Stock charts and market data visualization
+- `weather/` — Weather conditions and forecasts
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+### `redux/`
+State management using Redux, organized by features:
+- `feature/login` — Login state management and authentication
+- `store.js` — Central Redux store configuration
+
+
+## Lets Try Locally
+
+Installation guide : npm installed required
+
+```bash
+# Clone the repository
+git clone https://github.com/shadowashwin/pgag-ashwin.git
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
